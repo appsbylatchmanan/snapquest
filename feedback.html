@@ -52,6 +52,6 @@
   </ul>
   <p>© <span class="ab-year">2026</span> Latchmanan · <a href="/snapquest/feedback.html">Send feedback</a></p>
 </footer>
-<script>document.querySelectorAll('.ab-year').forEach(function(e){e.textContent=new Date().getFullYear()})</script>
+<script>document.querySelectorAll('.ab-year').forEach(function(e){var y=new Date().getFullYear();e.textContent=y>2026?'2026–'+y:'2026'})</script>
 </body>
 </html>
