@@ -22,18 +22,19 @@
 </head>
 <body class="ab-page" data-app="snapquest">
 <a class="ab-skip" href="#main">Skip to content</a>
-<div class="ab-sitebar">
+<header class="ab-sitebar">
   <a class="ab-sitebar__home" href="/"><img class="ab-logo" src="/assets/logo.svg" alt="" width="32" height="32">Apps by Latchmanan</a>
   <nav aria-label="Site"><a href="/#apps">All apps</a><a href="/about/">About</a><a href="/accessibility/">Accessibility</a><a href="/snapquest/feedback.html">Contact</a></nav>
-</div>
-<header class="ab-app-header ab-app-header--hero">
+</header>
+<main id="main">
+<div class="ab-app-header ab-app-header--hero">
   <div class="ab-hero">
     <div>
       <img class="ab-hero__icon ab-hero__icon--narrow" src="/snapquest/icon.png?v=2" width="96" height="96" alt="SnapQuest app icon">
       <h1>Snap it.<br>Prove it. Win it.</h1>
       <p class="ab-hero__lead">SnapQuest turns a holiday, a party or a team day into a photo challenge. Make teams, share a 6-letter code, snap proof of each challenge – then everyone votes on the photos.</p>
+      <p class="ab-hero__soon">Coming soon to the App Store</p>
       <div class="ab-hero__actions">
-        <span class="ab-btn ab-btn--store" aria-disabled="true">Coming soon to the App Store</span>
         <a class="ab-btn ab-btn--light" href="#how">See how it works</a>
       </div>
       <p class="ab-hero__note">Free to play. SnapQuest Pro is a one-time purchase for the game owner – no subscription.</p>
@@ -45,7 +46,7 @@
       <img class="ab-hero__art" src="/snapquest/icon.png?v=2" width="256" height="256" alt="">
     </div>
   </div>
-</header>
+</div>
 <nav class="ab-app-nav" aria-label="SnapQuest">
   <a href="/snapquest/" aria-current="page">Home</a>
   <a href="/snapquest/support.html">Support</a>
@@ -53,7 +54,7 @@
   <a href="/snapquest/terms.html">Community rules</a>
   <a href="/snapquest/feedback.html">Feedback</a>
 </nav>
-<main id="main">
+<div>
 <section class="ab-section" id="how" aria-labelledby="how-title">
   <h2 id="how-title">How it works</h2>
   <div class="ab-cards">
@@ -104,16 +105,17 @@
     <p class="ab-muted">In the app: Home screen → person icon → <em>Contact support</em>. Answers to common questions are on the <a href="/snapquest/support.html">Support page</a>.</p>
   </div>
 </section>
+</div>
 </main>
 <footer class="ab-footer">
   <ul class="ab-footer__links" aria-label="About us">
     <li><a href="/about/">About</a></li>
-    <li><a href="/privacy/">Privacy</a></li>
+    <li><a href="/privacy/">Website privacy</a></li>
     <li><a href="/accessibility/">Accessibility</a></li>
     <li><a href="/disclaimer/">Disclaimer</a></li>
   </ul>
   <p>© <span class="ab-year">2026</span> Latchmanan · <a href="/snapquest/feedback.html">Send feedback</a></p>
 </footer>
-<script>document.querySelectorAll('.ab-year').forEach(function(e){var y=new Date().getFullYear();e.textContent=y>2026?'2026–'+y:'2026'})</script>
+<script>(function(){var n=document.querySelector('.ab-app-nav'),c=n&&n.querySelector('[aria-current]');if(n&&c&&n.scrollWidth>n.clientWidth)n.scrollLeft=c.offsetLeft-(n.clientWidth-c.offsetWidth)/2})();document.querySelectorAll('.ab-year').forEach(function(e){var y=new Date().getFullYear();e.textContent=y>2026?'2026–'+y:'2026'})</script>
 </body>
 </html>

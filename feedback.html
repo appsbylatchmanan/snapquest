@@ -15,15 +15,16 @@
 </head>
 <body class="ab-page" data-app="snapquest">
 <a class="ab-skip" href="#main">Skip to content</a>
-<div class="ab-sitebar">
+<header class="ab-sitebar">
   <a class="ab-sitebar__home" href="/"><img class="ab-logo" src="/assets/logo.svg" alt="" width="32" height="32">Apps by Latchmanan</a>
   <nav aria-label="Site"><a href="/#apps">All apps</a><a href="/about/">About</a><a href="/accessibility/">Accessibility</a><a href="/snapquest/feedback.html">Contact</a></nav>
-</div>
-<header class="ab-app-header">
+</header>
+<main id="main">
+<div class="ab-app-header">
   <img class="ab-app-header__icon" src="/snapquest/icon.png?v=2" alt="" width="72" height="72">
   <h1>SnapQuest</h1>
   <p>Feedback</p>
-</header>
+</div>
 <nav class="ab-app-nav" aria-label="SnapQuest">
   <a href="/snapquest/">Home</a>
   <a href="/snapquest/support.html">Support</a>
@@ -31,22 +32,23 @@
   <a href="/snapquest/terms.html">Community rules</a>
   <a href="/snapquest/feedback.html" aria-current="page">Feedback</a>
 </nav>
-<main class="ab-main" id="main">
+<div class="ab-main">
 <p class="ab-lead">Need help, found a bug, or have an idea for a new challenge or feature? We'd love to hear it. You don't need to give your name or email.</p>
 <p>To report a post or a player, or to ask us to delete your data, please include your display name and the name of your game so we can find it.</p>
 <p><a class="ab-btn ab-btn--secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSesNMpWVQSbaXP0XzJnM_6f2FGisAvhgWcI8T07UKKzgsDj_g/viewform" target="_blank" rel="noopener">Open the form in a new window</a></p>
 <iframe class="ab-form-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSesNMpWVQSbaXP0XzJnM_6f2FGisAvhgWcI8T07UKKzgsDj_g/viewform?embedded=true" title="Feedback form" loading="lazy"></iframe>
 <p class="ab-muted">The form is run by Google Forms. See our <a href="/snapquest/privacy.html">privacy policy</a>.</p>
+</div>
 </main>
 <footer class="ab-footer">
   <ul class="ab-footer__links" aria-label="About us">
     <li><a href="/about/">About</a></li>
-    <li><a href="/privacy/">Privacy</a></li>
+    <li><a href="/privacy/">Website privacy</a></li>
     <li><a href="/accessibility/">Accessibility</a></li>
     <li><a href="/disclaimer/">Disclaimer</a></li>
   </ul>
   <p>© <span class="ab-year">2026</span> Latchmanan · <a href="/snapquest/feedback.html">Send feedback</a></p>
 </footer>
-<script>document.querySelectorAll('.ab-year').forEach(function(e){var y=new Date().getFullYear();e.textContent=y>2026?'2026–'+y:'2026'})</script>
+<script>(function(){var n=document.querySelector('.ab-app-nav'),c=n&&n.querySelector('[aria-current]');if(n&&c&&n.scrollWidth>n.clientWidth)n.scrollLeft=c.offsetLeft-(n.clientWidth-c.offsetWidth)/2})();document.querySelectorAll('.ab-year').forEach(function(e){var y=new Date().getFullYear();e.textContent=y>2026?'2026–'+y:'2026'})</script>
 </body>
 </html>
